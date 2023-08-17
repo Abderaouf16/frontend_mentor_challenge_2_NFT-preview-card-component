@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  height: 100vh;
+}
+main {
+  background-color: hsl(216, 50%, 16%);
+  width: 360px;
+  height: 560px;
+  margin: auto;
+  border-radius: 10px;
+  display: flex;
+}
+main > div {
+  width: 88%;
+  height: 94%;
+  margin: auto;
+}
+.section1 {
+  width: 100%;
+}
+.section1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.section1 img:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.section2 h2 {
+  color: white;
+  font-size: 18px;
+  margin: 20px 0 20px 0;
+  cursor: pointer;
+}
+
+.section2 h2:hover {
+  color: hsl(178, 100%, 50%);
+}
+.text_content p {
+  font-size: 16px;
+  color: hsl(215, 51%, 70%);
+}
+.text_content {
+  margin-bottom: 20px;
+}
+
+.price_container {
+  display: flex;
+  justify-content: space-between;
+}
+.price,
+.days {
+  display: flex;
+  align-items: center;
+}
+
+.price p {
+  font-weight: 700;
+  color: hsl(178, 100%, 50%);
+  margin-left: 8px;
+}
+.days p {
+  margin-left: 8px;
+  color: hsl(215, 51%, 70%);
+}
+
+.section3 {
+  width: 100%;
+  height: 10%;
+}
+.section3 > div {
+  display: flex;
+  align-items: center;
+  border-top: 1px hsl(215, 51%, 70%) solid;
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 15px;
+}
+.section3 > div > img {
+  width: 30px;
+}
+.section3 > div > p {
+  padding-left: 15px;
+  color: hsl(215, 51%, 70%);
+}
+span {
+  color: white;
+  cursor: pointer;
+}
+span:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+@media (max-width: 375px) {
+  main {
+    width: 90vw;
+    height: 70vh;
+  }
+}
+.img_container {
+  position: relative;
+  display: flex;
+}
+
+/*efect*/
+.view {
+  position: absolute;
+  display: flex;
+  inset: 0;
+  border-radius: 15px;
+  opacity: 1;
+  cursor: pointer;
+}
+.bleu_bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: hsl(178, 100%, 50%);
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+.bleu_bg:hover {
+  opacity: 0.4;
+}
+
+.view img {
+  z-index: 900;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.view:hover .eye {
+  opacity: 1;
+}
